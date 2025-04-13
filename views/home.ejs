@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mind Health Blog</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="top-nav">
+            <a href="/login" class="login-btn">Login</a>
+            <a href="/signup" class="signup-btn">Sign Up</a>
+          <div class="search-icon">🔍</div>
+        </div>
+      
+        <div class="overlay">
+          <h2>A Few Things you should know about</h2>
+          <h1>Insomnia</h1>
+        </div>
+      </header>
+      
+
+      <section class="news-section">
+        <div class="news-latest">
+          <img src="/latest-news.png" alt="Latest News Image">
+          <div class="news-content">
+            <h3>Latest News</h3>
+            <p>Learn what's trending right now in health and wellness.</p>
+          </div>
+        </div>
+      
+        <div class="news-card">
+          <img src="/panic-attack.png" alt="Panic Attack Image">
+          <div class="news-content">
+            <h3>Signs of a Panic Attack</h3>
+            <p>Feeling dizzy, breathless, or overwhelmed? Here are the signs to look out for.</p>
+          </div>
+        </div>
+      </section>
+      
+
+  <section class="posts">
+    <% posts.forEach((post, index) => { %>
+      <article>
+        <h3><%= post.title %></h3>
+        <p><%= post.content %></p>
+        <form action="/delete/<%= index %>" method="POST"><button>Delete</button></form>
+        <a href="/edit/<%= index %>">Edit</a>
+      </article>
+    <% }); %>
+  </section>
+
+  <a href="/new" class="new-btn">+ Add Post</a>
+</body>
+</html>

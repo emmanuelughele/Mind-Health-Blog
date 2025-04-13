@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #C6BEB8;
+  }
+  .top-nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .login-btn,
+  .signup-btn {
+    background-color: #BEA17C;
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .signup-btn {
+    background-color: #f5b164;
+  }
+  
+  .search-icon {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+   
+  .hero {
+    background: url('/insomnia.png') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+  }
+  
+  .overlay h2 {
+    font-size: 1.5rem;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    color: #f5b164;
+  }
+  
+  .news-section {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+  }
+  
+  .news-latest {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .news-card {
+    background-color: #BEA17C;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .news-latest img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .news-content {
+    padding: 15px;
+  }
+  
+  .news-content h3 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .news-content p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  
+  .posts article {
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .new-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #BEA17C;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  .form-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #cdb69f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
